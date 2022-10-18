@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "repl_python3_wynnbotqrsfgliuhvkjejilocvnlhsojg"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "3.10"
+bs4 = "0.0.1"
+Flask = "2.2.2"
+pytz = "2022.2.1"
+discord = "2.0.0"
+pysafebrowsing = "0.1.2"
+firebase-admin = "5.3.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
