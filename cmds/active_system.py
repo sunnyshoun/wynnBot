@@ -59,11 +59,11 @@ class active_system(Cog_Extension):
             embed = discord.Embed(title=f"≺{year}/{month.zfill(2)} Logs≻", color=0x54e6f5)
             embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/853812014765178950/879793352260874300/wynnbot.png")
             logs_info = ""
-
+            print(rank_logs)
             for k, v in rank_logs[year][month].items():
-                logs_info += f"－第{k}周 活躍之星：{v}"
+                logs_info += f"－第{k.strip('|')}周 活躍之星：{v}\n"
     
-            embed.add_field(name=f"Active Star", value=logs_info, inline=False)
+            embed.add_field(name="Active Star", value=logs_info, inline=False)
             await ctx.reply(embed=embed)
         
 async def setup(bot):

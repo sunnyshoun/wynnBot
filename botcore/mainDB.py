@@ -131,7 +131,7 @@ def add_rank_logs(name,y,m,m_week):
         rank_logs[y]={}
     if m not in rank_logs[y].keys():
         rank_logs[y][m] = {}
-    rank_logs[y][m][m_week] = name
+    rank_logs[y][m]['|'+str(m_week)+'|'] = name
     ref.child('rank_logs').set(rank_logs)
 
 def get_rank_logs():
